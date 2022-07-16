@@ -8,20 +8,22 @@
     <title>Timed Quiz</title>
 </head>
 <body>
-    <header id="header">
-        <h1>Timed Quiz</h1>
-        <button id="start-btn" class="startbutton">Start</button>
-    </header>
-    <section class="container">
-        <section id="questionsContainer"> 
-            <section id="answerBtns">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </section>
-        </section>
-    </section>
+    <div class="start_btn"><button>Start Quiz</button></div>
+      
+    <div class="info_box">
+        <div class="info_title">
+            <span>Rules of this quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. When you start the quiz than a timer will start.</div>
+            <div class="info">2. Answer a question correctly a new question will appear.</div>
+            <div class="info">3. Answer a question incorrectly and time will be subtracted from the timer.</div>            
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
     
     <script src="./script.js"></script>
 </body>
