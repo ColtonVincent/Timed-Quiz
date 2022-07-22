@@ -1,0 +1,2 @@
+var quizEl
+var infoBox
