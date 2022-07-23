@@ -8,40 +8,35 @@
     <title>Timed Quiz</title>
 </head>
 <body>
+    <div class="container"></div>
     <div class="start_btn"><button>Start Quiz</button></div>
       
     <div class="info_box">
         <div class="info_title">
             <span>Rules of this quiz</span>
         </div>
-        <div class="info_list">
-            <div class="info">1. When you start the quiz than a timer will start.</div>
-            <div class="info">2. Answer a question correctly a new question will appear.</div>
-            <div class="info">3. Answer a question incorrectly and time will be subtracted from the timer.</div>            
-        </div>
-        <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
-        </div>
+            <div class="info_list">
+                <div class="info">1. When you start the quiz than a timer will start.</div>
+                <div class="info">2. Answer a question correctly a new question will appear.</div>
+                <div class="info">3. Answer a question incorrectly and time will be subtracted from the timer.</div>            
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
     </div>
-
     <div class="quiz_box hide">
         <Header>
             <div class="title">JavaScript Fundamentals Quiz</div>
             <div class="timer">
                 <div class="time_text">Time left</div>
-                <div class="timer_min">5</div>
+                <div class="timer_sec"></div>
             </div>
         </Header>
         <section>
-            <div class="que_text">
-                <span>Inside which HTML element do we put the JavaScript?</span>
-            </div>
-           <div class="option_list">
-            <div class="option">
-                <span>&ltscript&gt</span>
-            </div>
-           </div>
+            <div class="que_text"></div>
+            <div class="option_list"></div>
+            <div class="option"></div>
         </section>
     </div>
 
