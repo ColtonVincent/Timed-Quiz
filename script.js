@@ -7,8 +7,22 @@ var questions = [{
     a:["<script>", "src", "<p>", "body"],
     c:"<script"
 },{
-
-},{},{}]
+    q:"What JavaScript data type gives true of false",
+    a:["boolean", "string", "array", "object"],
+    c:"boolean"
+},{
+    q:"What is the proper way to write a function",
+    a:["function=myFunction", "(function)", "function{}", "function myFunction()"],
+    c:"function myFunction()"
+},{
+    q:"",
+    a:[""],
+    c:""
+},{
+    q:"",
+    a:[""],
+    c:""
+}]
 var qCounter = 0
 
 
