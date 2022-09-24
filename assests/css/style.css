@@ -57,30 +57,6 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.buttons button.restart{
-    border-color: green;
-    color: white;
-    background-color: green;
-
-}
-
-.buttons button.quit{
-    color: green;
-    border-color: green;
-
-}
-
-
-.buttons button.quit:hover{
-    color: white;
-    background: green;
-}
-
-.buttons button.restart:hover{
-    color: green;
-    background: white;
-}
-
 .hide{
     display: none;
 }
