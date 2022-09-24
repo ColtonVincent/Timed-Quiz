@@ -4,25 +4,25 @@ var countDown = 60
 var timerEl = document.querySelector(".timer_sec")
 var optionEl = document.querySelector(".option")
 var questions = [{
-    q: "Inside which HTML element do we put the JavaScript",
+    q: "Inside which HTML element do we put the JavaScript?",
     a: ["<script>", "src", "<p>", "body"],
     c: "<script>"
 }, {
-    q: "What JavaScript data type gives true of false",
+    q: "What JavaScript data type gives true of false?",
     a: ["boolean", "string", "array", "object"],
     c: "boolean"
 }, {
-    q: "What is the proper way to write a function",
+    q: "What is the proper way to write a function?",
     a: ["function=myFunction", "(function)", "function{}", "function myFunction()"],
     c: "function myFunction()"
 }, {
-    q: "",
-    a: [""],
-    c: ""
+    q: "This is a structure that allows you to store multiple values in a single reference?",
+    a: ["array", "string", "object", "number"],
+    c: "array"
 }, {
-    q: "",
-    a: [""],
-    c: ""
+    q: "which operator adds value to a variable?",
+    a: ["===", "=", "=", "*"],
+    c: "="
 }]
 var qCounter = 0
 
