@@ -8,7 +8,7 @@
   - [Usage](#usage)
   - [Credits](#credits)
   - [Link](#link)
-  - [Image](#Image-of-deployed-site)
+  - [Image of deployed site](#Image)
   
   ## Usage
   
@@ -22,7 +22,7 @@
 
   [Link](https://coltonvincent.github.io/Timed-Quiz/)
 
-  ## Image-of-deployed-site
-  ![](timedQuiz.png)
+  ## Image of deployed site
+  ![](/images/timedQuiz.png)
   
   
