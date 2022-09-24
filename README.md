@@ -20,7 +20,7 @@
 
   ## Link
 
-  [Link]()
+  [Link](https://coltonvincent.github.io/Timed-Quiz/)
 
   ## Image-of-deployed-site
   ![](timedQuiz.png)
