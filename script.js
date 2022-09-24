@@ -3,6 +3,8 @@ var interval
 var countDown = 60
 var timerEl = document.querySelector(".timer_sec")
 var optionEl = document.querySelector(".option")
+var submitButton =document.querySelector('#submit')
+var highScoreArray = JSON.parse(localStorage.getItem("highScores")) || []
 var questions = [{
     q: "Inside which HTML element do we put the JavaScript?",
     a: ["<script>", "src", "<p>", "body"],
@@ -43,8 +45,8 @@ function timer() {
     interval = setInterval(function () {
         countDown--
         timerEl.textContent = countDown
-        if (countDown === 0) {
-            clearInterval(interval)
+        if (countDown <= 0) {
+          endGame()
         }
     }, 1000)
 }
@@ -70,23 +72,34 @@ function checkAnswer(event) {
         console.log("False")
         countDown -= 5
     }
-    qCounter++
-    displayQuestions()
+    if(qCounter === questions.length -1) {
+        endGame()
+    } else {
+        qCounter++
+        displayQuestions()
+    }
 }
 
+//when timer hits 0
+//when youve asnswered the last question
 function endGame () {
-    //when timer hits 0
-    //when youve asnswered the last question
+clearInterval(interval)
+optionEl.innerHTML = ""
+var queEl = document.querySelector(".que_text")
+    queEl.innerHTML = ""
+var highScoresEl = document.querySelector(".block")
+highScoresEl.classList.remove("hide")
 }
 
 function highScores() {
-
+var signatures = document.querySelector(".input").value
+var tempObject = {
+    ins: signatures,
+    score: countDown
 }
-
-
-
-
-
-
+highScoreArray.push(tempObject)
+localStorage.setItem("highScores", JSON.stringify(highScoreArray))
+}
+submitButton.addEventListener('click', highScores)
 optionEl.addEventListener("click", checkAnswer)
 startBtn.addEventListener("click", clickHandler)
